@@ -21,5 +21,10 @@ int Second(int number)
 }
 
 int Number = Prompt("Введите число");
+
+//десятки вычитаем, на их место ставим единицы
+//156
+//(156 - 50 + 60 - 6)/10
+
 int Result = (Number - (Second(Number) * 10) + (Number % 10) * 10 - Number % 10) / 10;
 System.Console.WriteLine(Result);
